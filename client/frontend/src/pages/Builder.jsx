@@ -41,10 +41,10 @@ function Builder() {
 
       const data = await generateWebsite(formData);
       console.log("API DATA:", data);
-const parsedData = JSON.parse(data.body);
+      // const parsedData = JSON.parse(data.body);
 
       // Save AI data in Context
-      setWebsiteData(parsedData);
+      setWebsiteData(data);
 
       // Redirect
       navigate("/preview");
